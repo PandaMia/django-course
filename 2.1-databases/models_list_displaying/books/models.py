@@ -10,3 +10,6 @@ class Book(models.Model):
 
     def __str__(self):
         return self.name + " " + self.author
+
+    def str_date(self):
+        return str(self.pub_date)
