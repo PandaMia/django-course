@@ -16,5 +16,13 @@
             </div>
             {% endfor %}
         </div>
+
+        {% if previous_date != None %}
+            <a class="button button-primary" href="/books/{{ previous_date }}/">⟵ {{ previous_date }}</a>
+        {% endif %}
+        {% if next_date != None %}
+            <a class="button button-primary" href="/books/{{ next_date }}/">{{ next_date }} ⟶</a>
+        {% endif %}
+
     </div>
 {% endblock %}
